@@ -12,10 +12,14 @@ matplotlib.use('TkAgg')
 # Konvention erstellen je nach Testdaten
 conv = pv.load.conventions(['E'])
 
+ 
+
 # Daten einlesen
 # Testdatei aus dem repository mit Speicher und Verlustmodul
 data = pv.load.file('./Examples/freq_user_raw.csv')
 df_raw, arr_RefT, units = pv.load.user_raw(data, 'freq', 'E')
+#RefT = 30
+#df_raw, units = pv.load.user_master(data, 'freq', RefT, 'G')
 
 # Einheiten Check
 check = pv.load.check_units(units, modul='E')

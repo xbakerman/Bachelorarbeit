@@ -27,3 +27,5 @@ python prony.py
 ## Python Skript
 
 In 'prony.py' befindet sich das Python Skript zum berechnen von Prony Parametern aus viskoelastischen DMA-Messdaten. Im Skript wird die PyVisco Bibliothek verwendet (https://github.com/NREL/pyvisco)
+
+In 'prony_master.py' befindet sich das Python Skript zum berechnen von Prony Parametern aus viskoelastischen DMA-Messdaten bei denen die Masterkurve schon vorhanden ist. Im Skript wird die PyVisco Bibliothek verwendet.
